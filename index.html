@@ -13,7 +13,57 @@
 </head>
 
 <body>
+    <header>Weather Dashboard</header>
 
+    <main class="row justify-space-between">
+        <div class="col-4 col-md-4">
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search City</h3>
+                <form id="user-form" class="card-body">
+                    <label class="form-label" for="cityname">City Name</label>
+                    <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" id="find" class="btn btn-primary">Find</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-8 col-md-8">
+            <h2 class="subtitle">Current Weather</h2>
+            <div id="current-container" class="current-weather">
+                
+                Temp: <span id="temp"></span>
+                <br>
+                Wind: <span id="wind"></span>
+                <br>
+                Humitidy: <span id="humidity"></span>
+                <br>
+                UV Index: <span id="uvIndex"></span>
+            </div>
+        </div>
+        <div class="col-4 col-md-4">
+            <div class="card">
+                <h4 class="card-header text-uppercase">Past Searches</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">A Past City Searched</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8 col-md-8">
+            <h2 class="subtitle">5 Day Forecast</h2>
+            <div id="forecast-container" class="5-day-forecast">
+                <div class="row justify-content-evenly">
+                    <div id="forecast" class="col-2">1</div>
+                    <div id="forecast" class="col-2">2</div>
+                    <div id="forecast" class="col-2">3</div>
+                    <div id="forecast" class="col-2">4</div>
+                    <div id="forecast" class="col-2">5</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./main.js"></script>
 </body>
 
